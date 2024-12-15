@@ -13,7 +13,7 @@ public class Application {
 
         int serverPort = Integer.parseInt(configHandler.getProperty("server.port"));
         int threadPoolSize = Integer.parseInt(configHandler.getProperty("thread.pool.size"));
-        int serverTimeout = Integer.parseInt(configHandler.getProperty("server.timeout.seconds"));
+        int serverTimeout = Integer.parseInt(configHandler.getProperty("server.timeout.milliseconds"));
 
         requestHandler.initializeExecutor(threadPoolSize);
         server.setServerPort(serverPort);
