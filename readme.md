@@ -30,7 +30,7 @@ server.timeout.milliseconds=30000
 ## Design Pattern
 - Config and handler are implemented using singleton design pattern
 
-- Web server implements utilizes command pattern to serve requests by calling the socket connection to adapter which takes a thread from thread pool and serves the request
+- Web server implements utilizes command pattern to serve requests by passing the socket connection to handler which takes a thread from thread pool and serves the request
 
 ## Technology
 Language : Java
